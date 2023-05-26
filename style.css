@@ -269,7 +269,6 @@ html {
 .aboutMeMain h1 {
     margin-bottom: 50px;
     position: relative;
-
 }
 
 .aboutMeMain h1::after {
@@ -322,10 +321,10 @@ html {
 .projects>.projectsHead {
     text-align: center;
     justify-content: center;
-    margin-left: 660px;
     color: #e8e8e8;
     width: 200px;
     height: 50px;
+    margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 50px;
 }
@@ -528,11 +527,12 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 160px 150px;
     height: 530px;
     width: 400px;
     color: rgb(242, 242, 242);
-
+    border: 1px solid red;
+    margin:  160px auto;
+       
 }
 
 .contact>.contactMain img {
@@ -590,11 +590,14 @@ textarea {
     .container>.sideBar {
         display: flex;
     }
+    
 
 }
 
 @media only screen and (max-width: 1000px) {
-
+    .aboutMeHead {
+        display: none;
+    }
     .navbar {
         display: none;
     }
@@ -608,11 +611,32 @@ textarea {
         text-align: center;
 
     }
+    .projects {
+        height: 230vh;
+    }
+    .projects>.projectsMain {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 330px;
+    }
+
+    .contact>.contactMain {
+    display: none;   
+    }
+    .contact>.contactHead>.contactMe {
+        margin: 160px 40px;
+    }   
+    .projects>.projectsMain>div {
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 700px) {
 
     .aboutMe>.myPic {
         display: none;
     }
+  
+   
 }
-
 
 /*Responsive*/

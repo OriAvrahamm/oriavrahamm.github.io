@@ -57,7 +57,6 @@ html {
 .navbar ul li a:hover {
     color: rgb(230, 201, 40);
     font-size: 1.2em;
-
 }
 
 /* The Navbar and links over the website */
@@ -257,7 +256,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-
 }
 
 .projectsHead {
@@ -270,8 +268,11 @@ html {
 
 }
 
-   
-.project1, .project2, .project3 {
+
+.project1,
+.project2,
+.project3,
+.project {
     width: 450px;
     height: 350px;
     margin: 20px auto;
@@ -281,7 +282,22 @@ html {
     transition: 0.5s;
 }
 
-.project1:hover, .project2:hover, .project3:hover {
+@media (max-width: 992px) {
+
+    .project1,
+    .project2,
+    .project3,
+    .project {
+        width: 330px;
+        height: 350px;
+    }
+
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project:hover {
     box-shadow: 0px 0px 5px 1px rgba(249, 249, 249, 0.7);
     opacity: 0.7;
     transform: translateY(-20px);
@@ -301,9 +317,11 @@ html {
 .project3 {
     background-image: url(pic/mainweb.png);
 
-
 }
 
+.project {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(pic/workinp.jpg);
+}
 .projectText {
     display: flex;
     flex-direction: column;
@@ -312,16 +330,16 @@ html {
     text-align: center;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     transition: 0.5s;
     border-radius: 50px;
     opacity: 0;
 }
 
 .projectText h3 {
-    font-size: 1.5em;
-    font-weight: 800;
-    color: rgba(215, 165, 66, 255);
+    font-size: 1.8em;
+    font-weight: 900;
+    color: rgb(42, 94, 125);
 }
 
 .projectText p {
@@ -336,9 +354,23 @@ html {
     opacity: 1;
 }
 
-.projectText i {
-    margin-top: 30px;
+.goVisit {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(42, 94, 125);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.goVisit:hover {
+    background-color: rgb(64, 64, 64);
+    transform: scale(1.2);
 }
 
 /* Projects Page  */
@@ -353,7 +385,7 @@ html {
 }
 
 .contactHead>.contactMe {
-   margin: 50px auto;
+    margin: 50px auto;
     height: 550px;
     width: 400px;
     color: rgb(9, 9, 9);
@@ -362,6 +394,12 @@ html {
     background-position: center;
     box-shadow: 5px 10px 10px 3px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .contactHead>.contactMe {
+        width: 350px;
+    }
 }
 
 form {
@@ -415,6 +453,7 @@ textarea {
     background-color: rgba(210, 160, 20, 255);
     padding: 13px 43px;
 }
+
 /* Contact Page  */
 
 .copyRights {
@@ -422,4 +461,3 @@ textarea {
     font-size: 1em;
     text-decoration: none;
 }
-

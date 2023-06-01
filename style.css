@@ -56,7 +56,6 @@ html {
 
 .navbar ul li a:hover {
     color: rgb(230, 201, 40);
-    font-size: 1.2em;
 }
 
 /* The Navbar and links over the website */
@@ -148,7 +147,7 @@ html {
 /* SIDE BAR */
 /* About Me Page  */
 #oaAbout {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(pic/dark.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(pic/dark.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -250,7 +249,7 @@ html {
 /* About Me Page  */
 /* Projects Page  */
 #oaProjects {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(pic/dark.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url(pic/dark.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,11 +258,11 @@ html {
 
 .projectsHead {
     color: #e8e8e8;
-    width: 200px;
+    width: 300px;
     height: 50px;
     margin: 0 auto;
     margin-top: 130px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 
 }
 
@@ -374,7 +373,7 @@ html {
 /* Projects Page  */
 /* Contact Page  */
 #oaContact {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(pic/dark.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15), rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(pic/dark.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
